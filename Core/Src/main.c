@@ -133,6 +133,24 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    	  Joystick_read(&pJoy);
+	  HAL_Delay(10);
+	  uint16_t T1= __HAL_TIM_SET_COUNTER(&htim1,0);
+	  NRFSendData("00000", Adc_Val1);
+	  HAL_Delay(100);
+
+  	  if((myNRF.RXIRQ==1) && (!myNRF.Busy))
+  	  {
+  	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+  	 HAL_Delay(10);
+  	  myNRF.RXIRQ==0;
+
+  	  }
+
+
+	  uint16_t T2 = __HAL_TIM_GET_COUNTER(&htim1);
+
+	  uint16_t T= T2-T1;
   }
   /* USER CODE END 3 */
 }
