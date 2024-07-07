@@ -12,17 +12,6 @@ STM32 G031 Microcontroller
 NRF24L Transceiver Module (connected via SPI)
 Various peripheral components (buttons, joysticks, etc.)
 ![Sample](https://github.com/Emrecanbl/STM32-NRF24L-Drone-Remote/blob/main/appearance.jpg?raw=true)
-Installation
-Clone the repository:
-
-sh
-Kodu kopyala
-git clone https://github.com/Emrecanbl/STM32-NRF24L-Drone-Remote.git
-Open the project:
-Open the project in your preferred IDE (e.g., STM32CubeIDE).
-
-Compile and upload:
-Compile the code and upload it to your STM32 G031 microcontroller using a suitable programmer (e.g., ST-Link).
 
 Usage
 Power on the controller:
